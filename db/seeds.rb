@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+# user
+
+chengjie = User.create(bio: 'Chengjie is a Shanghaie developer with an awesome dog. Please walk him!!!', open_id: "1234abcd", gender: "male")
+# pet
+# booking
+
+Pet.create(name: 'Stevie', bio: 'best dog ever', image: 'https://www.pexels.com/search/dogs/', species: 'dog', user: chengjie)
+Pet.create(name: 'Wang-Wang', bio: 'best dog ever', image: 'https://www.pexels.com/search/dogs/', species: 'dog', user: chengjie)
+Pet.create(name: 'Nala', bio: 'best cat ever', image: 'https://www.pexels.com/search/dogs/', species: 'cat', user: chengjie)
+Pet.create(name: 'Tortoise', bio: 'best turtle ever', image: 'https://www.pexels.com/search/dogs/', species: 'turtle', user: chengjie)

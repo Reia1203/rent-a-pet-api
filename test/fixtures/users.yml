@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bio: MyText
+  open_id: MyString
+  gender: MyString
+
+two:
+  bio: MyText
+  open_id: MyString
+  gender: MyString
