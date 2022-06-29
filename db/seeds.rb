@@ -13,7 +13,7 @@ chengjie = User.create(bio: 'Chengjie is a Shanghaie developer with an awesome d
 # pet
 # booking
 
-Pet.create(name: 'Stevie', bio: 'best dog ever', image: 'https://www.pexels.com/search/dogs/', species: 'dog', user: chengjie)
-Pet.create(name: 'Wang-Wang', bio: 'best dog ever', image: 'https://www.pexels.com/search/dogs/', species: 'dog', user: chengjie)
-Pet.create(name: 'Nala', bio: 'best cat ever', image: 'https://www.pexels.com/search/dogs/', species: 'cat', user: chengjie)
-Pet.create(name: 'Tortoise', bio: 'best turtle ever', image: 'https://www.pexels.com/search/dogs/', species: 'turtle', user: chengjie)
+Pet.create(name: 'Stevie', bio: 'best dog ever', image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80', species: 'dog', user: chengjie)
+Pet.create(name: 'Wang-Wang', bio: 'best dog ever', image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80', species: 'dog', user: chengjie)
+Pet.create(name: 'Nala', bio: 'best cat ever', image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80', species: 'cat', user: chengjie)
+Pet.create(name: 'Tortoise', bio: 'best turtle ever', image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80', species: 'turtle', user: chengjie)
