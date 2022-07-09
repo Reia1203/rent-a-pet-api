@@ -7,7 +7,8 @@ class Api::V1::PetsController < Api::V1::BaseController
 
   def show
     @pet = Pet.find(params[:id])
-    render json: @pet
+    booking_count = Booking.where(pet: @pet, user: @current_user).length
+    render json: { pet: @pet, booking_count: booking_count }
   end
 
   def create
