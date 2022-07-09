@@ -54,6 +54,9 @@ GEM
       activesupport (= 6.1.6)
       marcel (~> 1.0)
       mini_mime (>= 1.1.0)
+    activestorage-aliyun (1.1.0)
+      aliyun-sdk (>= 0.6.0)
+      rails (>= 6.0.0)
     activesupport (6.1.6)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
@@ -62,6 +65,9 @@ GEM
       zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    aliyun-sdk (0.8.0)
+      nokogiri (~> 1.6)
+      rest-client (~> 2.0)
     bindex (0.8.1)
     bootsnap (1.12.0)
       msgpack (~> 1.2)
@@ -90,6 +96,9 @@ GEM
       domain_name (~> 0.5)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
+    image_processing (1.12.2)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.17, < 3)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -108,6 +117,7 @@ GEM
     mime-types (3.4.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2022.0105)
+    mini_magick (4.11.0)
     mini_mime (1.1.2)
     minitest (5.16.1)
     msgpack (1.5.2)
@@ -166,6 +176,8 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rexml (3.2.5)
+    ruby-vips (2.1.4)
+      ffi (~> 1.12)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -229,9 +241,11 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activestorage-aliyun
   bootsnap (>= 1.4.4)
   byebug
   capybara (>= 3.26)
+  image_processing
   jbuilder (~> 2.7)
   jwt
   listen (~> 3.3)
