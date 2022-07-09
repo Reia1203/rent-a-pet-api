@@ -23,7 +23,7 @@ class Api::V1::PetsController < Api::V1::BaseController
   private
 
   def pet_params
-    params.require(:pet).permit(:name, :bio, :species)
+    params.require(:pet).permit(:name, :bio, :species, :photo)
   end
 
   def render_error
