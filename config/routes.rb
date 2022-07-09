@@ -5,11 +5,11 @@ Rails.application.routes.draw do
       # resources :users, only: [:show, :create, :destroy, :update]
       post 'login', to: 'sessions#login', as: :login
       resources :pets, only: [:index, :show, :create, :destroy, :update] do
+        resources :bookings, only: [:create]
         member do
           post 'upload'
         end
       end
-        resources :bookings, only: [:create]
         resources :bookings, only: [:index, :show, :destroy, :update]
     end
   end
