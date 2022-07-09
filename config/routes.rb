@@ -9,7 +9,9 @@ Rails.application.routes.draw do
           post 'upload'
         end
       end
-      resources :bookings, only: [:index, :show, :create, :destroy, :update]
+        resources :bookings, only: [:create]
+      end
+      resources :bookings, only: [:index, :show, :destroy, :update]
     end
   end
 end

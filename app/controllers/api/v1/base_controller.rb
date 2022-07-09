@@ -10,13 +10,16 @@ class Api::V1::BaseController < ActionController::Base
   private
 
   def verify_request
-    puts "I'm here"
+    # puts "I'm here"
     token = get_jwt_token
-    puts "This is the: #{token}"
+    # puts "This is the: #{token}"
     if token.present?
       data = jwt_decode(token)
+      # p "data: #{data}"
       user_id = data[:user_id]
+      # p user_id
       @current_user = User.find(user_id) # set current user by user_id in JWT payload
+      # p @current_user
     else
       render json: { error: 'Missing JWT token.' }, status: 401
     end
@@ -28,7 +31,7 @@ class Api::V1::BaseController < ActionController::Base
   end
 
   def get_jwt_token # retrieve token from headers
-    puts "this is request: #{request.headers['X-USER-TOKEN']}"
+    # puts "this is request: #{request.headers['X-USER-TOKEN']}"
     request.headers['X-USER-TOKEN']
   end
 
