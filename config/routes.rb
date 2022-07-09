@@ -4,8 +4,10 @@ Rails.application.routes.draw do
     namespace :v1 do
       # resources :users, only: [:show, :create, :destroy, :update]
       post 'login', to: 'sessions#login', as: :login
-      resources :pets, only: [:index, :show, :create, :destroy, :update]
-      resources :bookings, only: [:index, :show, :create, :destroy, :update]
+      resources :pets, only: [:index, :show, :create, :destroy, :update] do
+        resources :bookings, only: [:create]
+      end
+      resources :bookings, only: [:index, :show, :destroy, :update]
     end
   end
 end
